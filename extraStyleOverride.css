@@ -1,0 +1,381 @@
+body
+{
+    background-color: #f6f6f6;
+    color: #4C4E4E;
+}
+
+.contenedorBarraSuperiorInicio
+{
+    background: none;
+}
+
+.contenedorBotoneraPantallaInicio
+{
+    background-color: #009045;
+}
+
+.botonMenuInicio span
+{
+    color: #4C4E4E;
+}
+
+.botonMenuInicio:hover
+{
+    background-color: transparent;
+    color:  #4C4E4E;
+    outline: none;
+}
+
+.btnSeleccionado
+{
+    font-weight: bold;    
+    background-color: transparent;
+    color: #ED700A;
+}
+
+.btnSeleccionado:hover
+{    
+    color: #ED700A;    
+}
+
+.contenedorBarraInferior
+{
+    background-color: red;
+    width: 50%;
+    border-radius: 20px;
+    bottom: 30px;
+}
+
+.contenedorBarraInferior span
+{
+    color: #transparent;
+}
+
+.contenedorBarraSuperior
+{
+    display: none;    
+}
+
+.contenedorDtoActivo
+{
+    top: 32px;
+}
+
+.contenedorHorarioHoy
+{
+    top: 42px;
+    color: greenyellow;
+    background-color: #0F1623;
+}
+
+.glyphicon-time
+{
+    display: none;
+}
+
+.botonIniciarSesion
+{    
+    float:right;
+    margin-right:35%;
+    color: #4C4E4E;        
+    text-align: center;  
+    text-decoration: none;
+    cursor: pointer; 
+    margin-top: 13px;
+}
+
+.botonIniciarSesion:hover
+{    
+    color: #4C4E4E;
+    text-decoration: underline;
+}
+
+.botonCerrarSesion
+{   
+    float:right;
+    margin-right:35%;
+    color: #4C4E4E;        
+    text-align: center;  
+    text-decoration: none;
+    cursor: pointer; 
+    margin-top: 13px;
+}
+
+.botonCerrarSesion:hover
+{    
+    color: #4C4E4E;    
+    text-decoration: underline;
+}
+
+#contenedorEmailUsuarioBarraSuperiorInicio
+{    
+    top: 58px;
+    right: 2%;
+    color: #ED700A;
+}
+
+#contenedorEmailUsuarioBarraSuperiorInicio span
+{    
+    display: none;
+}
+
+.contenedorTituloCategoria
+{
+    color: #0F1623;
+}
+
+.contenedorBotoneraCategorias
+{    
+    text-align: center; 
+    background-color: #00c562;
+}
+
+/* CARGANDO */
+.contenedorPanelCargando
+{
+    display: inline-block;
+    position: fixed;        
+    width: 60px;
+    height: 58px;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -27px;
+    color: black;
+    text-align: center;        
+}
+
+.contenedorIconoCargando
+{
+    display: none;
+}
+.contenedorImgGifCargando
+{
+    display: none;    
+}
+.contenedorTextoCargando
+{
+    display: none;
+    color: transparent;    
+}
+.contenedorLogoCargando
+{    
+    width: 60px;
+    height: 58px;        
+    background: no-repeat url("../resources/commerce/1500/res/gif-preloader.gif");
+    background-position-x: center;
+    background-position-y: center;
+    opacity: 1;
+}
+/* FIN : CARGANDO */
+
+/* TITULOS GENERALES DE SECCIONES */
+.textoSombra_Titulo
+{
+    color: #4C4E4E;
+    font-size: 18px;
+}
+
+.contenedorTituloCategoria
+{
+    display: inline-block;
+    max-width: 897px;
+    width: 100%; 
+    vertical-align: top;
+    text-align: left;        
+    margin-bottom: 5px;
+    min-height: 40px;        
+    border-radius: 0px;        
+    padding: 10px;    
+    font-weight: bold;
+    font-size: 18px;        
+    background-image: none;
+    background: #ED700A;  
+    text-shadow: none;
+}
+
+.contenedorProducto
+{
+    border-radius: 5px;
+}
+
+/* CUADRATIZAR BOTONES */
+.boton_IngresarTelefono
+{    
+    border-radius: 0px;
+    box-shadow: none;
+}
+.boton_Entrar
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.boton_registrarme
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.boton_GP
+{
+    border-radius: 0px;
+    box-shadow: none;
+}
+.boton_FB
+{
+    border-radius: 0px;
+    box-shadow: none;
+}
+.botonLogin
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.botonLogin_registro
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.contenedorDtoActivo
+{
+    display: none;
+    visibility: hidden;
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 519px)
+{
+    /* .contenedorFlotanteGeneral
+    {
+        display: inline-block;
+        position: fixed;
+        background-color: #FFF;
+        width: 220px;
+        min-height: 90px;
+        left: 50%;
+        top: 30px;
+        margin-left: -110px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #333;
+        visibility: hidden;
+    } */
+    .contenedorFlotanteGeneral.detalleProducto
+    {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .boton_Entrar.detalleProducto
+    {
+        width: 280px;
+    }
+    .contenedorBarraInferior{
+    left: 75%;
+    margin-left: -50%;
+    }
+    .contenedorProducto{
+    width: 90%;
+    margin: 1% 5% ;
+    left: 0;
+
+    }
+    .contenedorIdentificadorProductoEMP{
+        margin: -25px 30px 0 0;
+    }
+
+}
+
+@media (max-width: 919px, min-width: 520){
+    .contenedorBarraInferior {
+     left: 75%;
+    margin-left: -50%;
+    }
+    .contenedorProducto{
+    width: 44%;
+    margin-left: 2%;
+    }
+}
+@media (min-width: 920px){
+    .contenedorBarraInferior {
+    margin-left: -25%;
+    }
+    .contenedorProducto{
+    width: 420px;
+    margin-left: 20px;
+    }
+
+}
+.botonCarrito{
+    color: transparent;
+    background-image: url('http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/botoncarrito.png');
+    background-repeat: no-repeat;
+}
+
+/*Categoría Producto*/
+
+#contenedorCategoria1 {
+    background-color:#ffd54f; 
+
+}
+#contenedorCategoria2 {
+    background-color:#ffd78f; 
+
+}
+
+/*Identificado producto*/
+.contenedorIdentificadorProductoEMP{
+    color:#1c8e0a;
+    width: 50px;
+    height: 35px;
+    margin: -15px 30px 0 0;
+    background: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/contenedorIdentificadorProducto@empanada.png") no-repeat center;
+    background-image: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/contenedorIdentificadorProducto@empanada.svg");
+    background-size: contain;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    /* NO TOCAR LA SIGUIENTE LINEA */
+    /*__font-size:@{tamFuenteNormal}px;__*/
+    float: right;
+}
+.contenedorIdentificadorProductoEMP p{
+    margin: 10px 0 0 0;
+}
+
+
+/* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR NOMBRE DEL PRODUCTO */
+.contenedorNombreProducto
+{
+    width: 75%;        
+    color: #d0661c;
+    font-size: 1.5em;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+/* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR PRECIO DEL PRODUCTO */
+.contenedorPrecioProducto{
+    font-size: 1.6em;
+    font-weight: lighter;
+    padding-right: 35px;
+}
+/* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR DESCRIPCION DEL PRODUCTO */
+.contenedorDescripcionProducto
+{
+    font-weight: lighter;
+    width: 75%; 
+}
+
+#contenedorPantallaCarta{
+    background-image: url(http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/back-wood.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

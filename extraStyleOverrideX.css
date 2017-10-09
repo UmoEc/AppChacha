@@ -1,0 +1,276 @@
+body
+{
+    background-color: #141E3D;
+    color: #0F1623;
+}
+
+.contenedorBarraSuperiorInicio
+{
+    background: none;
+}
+
+.contenedorBotoneraPantallaInicio
+{
+    background-color: transparent;
+}
+
+.botonMenuInicio span
+{
+    color: #ED700A;
+}
+
+.botonMenuInicio:hover
+{
+    background-color: transparent;
+    color: #ED700A;
+    outline: none;
+}
+
+.btnSeleccionado
+{
+    font-weight: bold;    
+    background-color: transparent;
+    color: #ED700A;
+}
+
+.btnSeleccionado:hover
+{    
+    color: #ED700A;    
+}
+
+.contenedorBarraInferior
+{
+    background-color: #0F1623;
+}
+
+.contenedorBarraInferior span
+{
+    color: #ED700A;
+}
+
+.contenedorBarraSuperior
+{
+    display: none;    
+}
+
+.contenedorDtoActivo
+{
+    top: 32px;
+}
+
+.contenedorHorarioHoy
+{
+    top: 42px;
+    color: greenyellow;
+    background-color: #0F1623;
+}
+
+.glyphicon-time
+{
+    display: none;
+}
+
+.botonIniciarSesion
+{    
+    float:right;
+    margin-right:35%;
+    color: white;        
+    text-align: center;  
+    text-decoration: none;
+    cursor: pointer; 
+    margin-top: 13px;
+}
+
+.botonIniciarSesion:hover
+{    
+    color: white;
+    text-decoration: underline;
+}
+
+.botonCerrarSesion
+{   
+    float:right;
+    margin-right:35%;
+    color: white;        
+    text-align: center;  
+    text-decoration: none;
+    cursor: pointer; 
+    margin-top: 13px;
+}
+
+.botonCerrarSesion:hover
+{    
+    color: white;    
+    text-decoration: underline;
+}
+
+#contenedorEmailUsuarioBarraSuperiorInicio
+{    
+    top: 58px;
+    right: 2%;
+    color: #ED700A;
+}
+
+#contenedorEmailUsuarioBarraSuperiorInicio span
+{    
+    display: none;
+}
+
+.contenedorTituloCategoria
+{
+    color: #0F1623;
+}
+
+.contenedorBotoneraCategorias
+{    
+    text-align: center; 
+}
+
+/* CARGANDO */
+.contenedorPanelCargando
+{
+    display: inline-block;
+    position: fixed;        
+    width: 60px;
+    height: 58px;
+    left: 50%;
+    top: 50%;
+    margin-left: -30px;
+    margin-top: -27px;
+    color: black;
+    text-align: center;        
+}
+
+.contenedorIconoCargando
+{
+    display: none;
+}
+.contenedorImgGifCargando
+{
+    display: none;    
+}
+.contenedorTextoCargando
+{
+    display: none;
+    color: transparent;    
+}
+.contenedorLogoCargando
+{    
+    width: 60px;
+    height: 58px;        
+    background: no-repeat url("../resources/commerce/1500/res/gif-preloader.gif");
+    background-position-x: center;
+    background-position-y: center;
+    opacity: 1;
+}
+/* FIN : CARGANDO */
+
+/* TITULOS GENERALES DE SECCIONES */
+.textoSombra_Titulo
+{
+    color: white;
+    font-size: 18px;
+}
+
+.contenedorTituloCategoria
+{
+    display: inline-block;
+    max-width: 897px;
+    width: 100%; 
+    vertical-align: top;
+    text-align: left;        
+    margin-bottom: 5px;
+    min-height: 40px;        
+    border-radius: 0px;        
+    padding: 10px;    
+    font-weight: bold;
+    font-size: 18px;        
+    background-image: none;
+    background: #ED700A;  
+    text-shadow: none;
+}
+
+.contenedorProducto
+{
+    border-radius: 0px;
+}
+
+/* CUADRATIZAR BOTONES */
+.boton_IngresarTelefono
+{    
+    border-radius: 0px;
+    box-shadow: none;
+}
+.boton_Entrar
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.boton_registrarme
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.boton_GP
+{
+    border-radius: 0px;
+    box-shadow: none;
+}
+.boton_FB
+{
+    border-radius: 0px;
+    box-shadow: none;
+}
+.botonLogin
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.botonLogin_registro
+{
+    border-radius: 0px;
+    box-shadow: none;
+    background-color: #ED700A;
+    color: #0F1623;
+}
+.contenedorDtoActivo
+{
+    display: none;
+    visibility: hidden;
+}
+
+/* CELULARES PEQUEÑOS */
+@media (max-width: 320px)
+{
+    /* .contenedorFlotanteGeneral
+    {
+        display: inline-block;
+        position: fixed;
+        background-color: #FFF;
+        width: 220px;
+        min-height: 90px;
+        left: 50%;
+        top: 30px;
+        margin-left: -110px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #333;
+        visibility: hidden;
+    } */
+    .contenedorFlotanteGeneral.detalleProducto
+    {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .boton_Entrar.detalleProducto
+    {
+        width: 280px;
+    }
+}

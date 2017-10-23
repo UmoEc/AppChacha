@@ -1,7 +1,11 @@
-<div id='contenedorProducto@{id_concepto}' onclick='producto_Click(@{id_concepto})' class='contenedorProducto'>
-    <div class='contenedorSinStock' style='display: @{displayStock};'>&nbsp;Sin stock&nbsp;</div>
-    <div class='contenedorNombreProducto'>@{nombre}</div>
-    <div class='contenedorPrecioProducto'>$ @{precio}</div>
-    <div class='contenedorDescripcionProducto'>@{descripcionCorta}</div> 
-    <div class='contenedorIdentificadorProducto@{identificador_categoria}'><p>@{identificador}</p></div>   
+<div id='contenedorProducto@{id_concepto} container' onclick='producto_Click(@{id_concepto})' class='contenedorProducto'>
+	<div class='row'>
+	    <div class='contenedorSinStock' style='display: @{displayStock};'>&nbsp;Sin stock&nbsp;</div>
+	    <div class='contenedorNombreProducto col-xs-9 col-md-9'>@{nombre}</div>
+	    <div class='contenedorPrecioProducto col-xs-3 col-md-3'>$ @{precio}</div>
+	</div>
+	<div class="row">
+	    <div class='contenedorDescripcionProducto col-xs-9 col-md-9'>@{descripcionCorta}</div> 
+	    <div class='contenedorIdentificadorProducto@{identificador_categoria} col-xs-3 col-md-3'><p>@{identificador}</p></div>
+    </div>   
 </div>

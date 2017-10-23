@@ -1,0 +1,77 @@
+/* CELULARES PEQUEÑOS */
+@media (max-width: 519px)
+{
+    /* .contenedorFlotanteGeneral
+    {
+        display: inline-block;
+        position: fixed;
+        background-color: #FFF;
+        width: 220px;
+        min-height: 90px;
+        left: 50%;
+        top: 30px;
+        margin-left: -110px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #333;
+        visibility: hidden;
+    } */
+    .contenedorFlotanteGeneral.detalleProducto
+    {
+        width: 300px;
+        margin-left: -150px;
+    }
+    .boton_Entrar.detalleProducto
+    {
+        width: 280px;
+    }
+    .contenedorBarraInferior{
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    }
+    /*.contenedorProducto{
+    width: 90%;
+    margin: 1% 5% ;
+    left: 0;
+
+    }*/
+    .contenedorIdentificadorProductoEMP{
+        margin: -25px 30px 0 0;
+    }
+
+@media (max-width: 919px, min-width: 520){
+    .contenedorBarraInferior {
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    }
+    .contenedorProducto{
+    width: 96%;
+    margin-left: 2%;
+    }
+}
+@media (min-width: 920px){
+    .contenedorBarraInferior {
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    background-color: blue;
+    }
+    .contenedorProducto{
+    width: 430px;
+    margin-left: 10px 0 0 13px;
+    }
+    .icon-cat{
+        margin: 3px;
+        width: 9%; 
+        height: 115px;
+    }
+    .icon-tit {
+        visibility: visible;
+        top: 75px;
+        font-size: 12px;
+        position: relative;
+    }
+}

@@ -2,27 +2,32 @@ body
 {
     background-color: #f6f6f6;
     color: #4C4E4E;
+    font-family: 'Titillium Web', sans-serif;
 }
 
-.contenedorBarraSuperiorInicio
+
+/*.contenedorBarraSuperiorInicio
 {
     background: none;
-}
+}*/
 
 .contenedorBotoneraPantallaInicio
 {
-    background-color: #009045;
+    background: #399C6E;  
+    top: 148px;
+    color: #fff;
+    height: 50px;
 }
 
 .botonMenuInicio span
 {
-    color: #4C4E4E;
+    color: #fff;
 }
 
 .botonMenuInicio:hover
 {
-    background-color: transparent;
-    color:  #4C4E4E;
+    background-color: #00c562;
+    color:  #fff;
     outline: none;
 }
 
@@ -30,20 +35,30 @@ body
 {
     font-weight: bold;    
     background-color: transparent;
-    color: #ED700A;
+    color: #fff;
+    padding-bottom: 10px;
 }
 
 .btnSeleccionado:hover
 {    
-    color: #ED700A;    
+    color: #fff;    
 }
 
 .contenedorBarraInferior
 {
-    background-color: red;
-    width: 50%;
+    background-color: white;
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
     border-radius: 20px;
-    bottom: 30px;
+    bottom: -10px;
+    border: solid 1px red;
+    transform: translateY(100%);
+    transition: all .5s ease;
+}
+
+.contenedorBarraInferior.entra {
+  transform: translateY(-30px);
 }
 
 .contenedorBarraInferior span
@@ -127,7 +142,8 @@ body
 .contenedorBotoneraCategorias
 {    
     text-align: center; 
-    background-color: #00c562;
+    background: #00c562;
+    color: #fff;
 }
 
 /* CARGANDO */
@@ -160,9 +176,9 @@ body
 }
 .contenedorLogoCargando
 {    
-    width: 60px;
-    height: 58px;        
-    background: no-repeat url("../resources/commerce/1500/res/gif-preloader.gif");
+    width: 128px;
+    height: 128px;        
+    background: no-repeat url("../resources/commerce/100/logos/logo128_trans.png");
     background-position-x: center;
     background-position-y: center;
     opacity: 1;
@@ -197,6 +213,8 @@ body
 .contenedorProducto
 {
     border-radius: 5px;
+    width: 430px;
+    margin: 10px 0 0 13px;
 }
 
 /* CUADRATIZAR BOTONES */
@@ -249,73 +267,10 @@ body
     visibility: hidden;
 }
 
-/* CELULARES PEQUEÑOS */
-@media (max-width: 519px)
-{
-    /* .contenedorFlotanteGeneral
-    {
-        display: inline-block;
-        position: fixed;
-        background-color: #FFF;
-        width: 220px;
-        min-height: 90px;
-        left: 50%;
-        top: 30px;
-        margin-left: -110px;
-        color: black;
-        padding: 10px;
-        border-radius: 5px;
-        box-shadow: 2px 2px 5px #333;
-        visibility: hidden;
-    } */
-    .contenedorFlotanteGeneral.detalleProducto
-    {
-        width: 300px;
-        margin-left: -150px;
-    }
-    .boton_Entrar.detalleProducto
-    {
-        width: 280px;
-    }
-    .contenedorBarraInferior{
-    left: 75%;
-    margin-left: -50%;
-    }
-    .contenedorProducto{
-    width: 90%;
-    margin: 1% 5% ;
-    left: 0;
 
-    }
-    .contenedorIdentificadorProductoEMP{
-        margin: -25px 30px 0 0;
-    }
-
-}
-
-@media (max-width: 919px, min-width: 520){
-    .contenedorBarraInferior {
-     left: 75%;
-    margin-left: -50%;
-    }
-    .contenedorProducto{
-    width: 44%;
-    margin-left: 2%;
-    }
-}
-@media (min-width: 920px){
-    .contenedorBarraInferior {
-    margin-left: -25%;
-    }
-    .contenedorProducto{
-    width: 420px;
-    margin-left: 20px;
-    }
-
-}
 .botonCarrito{
     color: transparent;
-    background-image: url('http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/botoncarrito.png');
+    background-image: url('http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/botoncarrito.png');
     background-repeat: no-repeat;
 }
 
@@ -335,9 +290,8 @@ body
     color:#1c8e0a;
     width: 50px;
     height: 35px;
-    margin: -15px 30px 0 0;
-    background: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/contenedorIdentificadorProducto@empanada.png") no-repeat center;
-    background-image: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/contenedorIdentificadorProducto@empanada.svg");
+    background: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/contenedorIdentificadorProducto@empanada.png") no-repeat center;
+    background-image: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/contenedorIdentificadorProducto@empanada.svg");
     background-size: contain;
     font-size: 14px;
     text-align: center;
@@ -345,6 +299,7 @@ body
     /* NO TOCAR LA SIGUIENTE LINEA */
     /*__font-size:@{tamFuenteNormal}px;__*/
     float: right;
+    margin-right: 30px;
 }
 .contenedorIdentificadorProductoEMP p{
     margin: 10px 0 0 0;
@@ -354,10 +309,10 @@ body
 /* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR NOMBRE DEL PRODUCTO */
 .contenedorNombreProducto
 {
-    width: 75%;        
     color: #d0661c;
+    font-family: 'Amaranth', sans-serif;
     font-size: 1.5em;
-    padding-left: 10px;
+    padding-left: 30px;
     text-transform: uppercase;
 }
 /* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR PRECIO DEL PRODUCTO */
@@ -369,13 +324,117 @@ body
 /* [ CONTENEDOR PRODUCTO ] -> CONTENEDOR DESCRIPCION DEL PRODUCTO */
 .contenedorDescripcionProducto
 {
-    font-weight: lighter;
-    width: 75%; 
+    font-weight: lighter; 
+    padding-left: 30px;
+    padding-top: 5px;
 }
 
 #contenedorPantallaCarta{
-    background-image: url(http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/back-wood.jpg);
+    background-image: url(http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/back-wood.jpg);
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+}
+#contenedorCarta{
+    margin-top: -45px;
+}
+.icon-cat{
+    vertical-align: top; 
+    display: inline-block; 
+    color: #fff; 
+    margin: 3px;
+    width: 9%; 
+    height: 70px;
+}
+.icon-tit {
+    visibility: hidden;
+    top: 45px;
+    font-size: 10px;
+}
+/* CELULARES PEQUEÑOS */
+@media (max-width: 520px)
+{
+    #contenedorPantallaCarta{
+    background-repeat: repeat;
+}
+
+    /* .contenedorFlotanteGeneral
+    {
+        display: inline-block;
+        position: fixed;
+        background-color: #FFF;
+        width: 220px;
+        min-height: 90px;
+        left: 50%;
+        top: 30px;
+        margin-left: -110px;
+        color: black;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px #333;
+        visibility: hidden;
+    } */
+    .contenedorFlotanteGeneral.detalleProducto{
+        width: 300px;
+        margin-left: -150px;
+    }
+    .boton_Entrar.detalleProducto{
+        width: 280px;
+    }
+    .contenedorBarraInferior{
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    }
+    .contenedorProducto{
+    width: 90%;
+    margin: 1% 5% ;
+    left: 0;
+    }
+    .contenedorIdentificadorProductoEMP{
+        margin: -25px 30px 0 0;
+    }
+    .icon-cat{
+    margin: 3px;
+    width: 8%; 
+    height: 60px;
+    }
+}
+
+@media (max-width: 919px){
+    .contenedorBarraInferior {
+    width: 80%;
+    left: 50%;
+    margin-left: -40%;
+    }
+    .contenedorProducto{
+    width: 96%;
+    margin-left: 2%;
+    }
+}
+@media (min-width: 920px){
+    .contenedorBarraInferior {
+    width: 60%;
+    left: 50%;
+    margin-left: -30%;
+    background-color: blue;
+    }
+    .contenedorProducto{
+    width: 430px;
+    margin: 10px 0 0 13px;
+    }
+    .icon-cat{
+        margin: 3px;
+        width: 9%; 
+        height: 115px;
+    }
+    .icon-tit {
+        visibility: visible;
+        top: 75px;
+        font-size: 12px;
+        position: relative;
+    }
+    .contenedorBotoneraPantallainicio{
+        top: 148px;
+    }
 }

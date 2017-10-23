@@ -288,18 +288,15 @@ body
 /*Identificado producto*/
 .contenedorIdentificadorProductoEMP{
     color:#1c8e0a;
-    width: 50px;
-    height: 35px;
+    /*width: 50px;
+    height: 35px;*/
+    top: 5px;
     background: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/contenedorIdentificadorProducto@empanada.png") no-repeat center;
     background-image: url("http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/contenedorIdentificadorProducto@empanada.svg");
     background-size: contain;
     font-size: 14px;
     text-align: center;
     display: inline-block;
-    /* NO TOCAR LA SIGUIENTE LINEA */
-    /*__font-size:@{tamFuenteNormal}px;__*/
-    float: right;
-    margin-right: 30px;
 }
 .contenedorIdentificadorProductoEMP p{
     margin: 10px 0 0 0;
@@ -327,13 +324,18 @@ body
     font-weight: lighter; 
     padding-left: 30px;
     padding-top: 5px;
+    width: 75%;
 }
 
 #contenedorPantallaCarta{
     background-image: url(http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/back-wood.jpg);
-    background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
 }
 #contenedorCarta{
     margin-top: -45px;
@@ -342,20 +344,64 @@ body
     vertical-align: top; 
     display: inline-block; 
     color: #fff; 
-    margin: 3px;
-    width: 9%; 
+/*    margin: 3px;
+    width: 9%; */
     height: 70px;
 }
+.icon-nav{
+    display: initial;
+}
+.icon-nav > .row {
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-top: -30px;
+}
+.icon-nav > .row > .col-xs-2{
+    display: inline-block;
+    float: none;
+}
 .icon-tit {
-    visibility: hidden;
+   /* visibility: hidden;*/
     top: 45px;
     font-size: 10px;
 }
+
+/*iconos categorías*/
+.carne{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__carne.svg');
+}
+.carne-cuch{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__carnecuch.svg');
+}
+.queso{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__queso.svg');
+}
+.pollo{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__pollo.svg');
+}
+.mar{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__mar.svg');
+}
+.vegetales{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__veg.svg');
+}
+.integrales{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__int.svg');
+}
+.pasteles{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__pasteles.svg');
+}
+.bebidas{
+    background: no-repeat center top url('../resources/commerce/100/res/custom/img/icon/icon-white__bebida.svg');
+}
+
+
+
 /* CELULARES PEQUEÑOS */
 @media (max-width: 520px)
 {
     #contenedorPantallaCarta{
-    background-repeat: repeat;
+    background-attachment: initial;
 }
 
     /* .contenedorFlotanteGeneral
@@ -392,12 +438,22 @@ body
     left: 0;
     }
     .contenedorIdentificadorProductoEMP{
-        margin: -25px 30px 0 0;
+        /*margin: -25px 30px 0 0;*/
     }
     .icon-cat{
-    margin: 3px;
-    width: 8%; 
-    height: 60px;
+    height: 100px;
+    }
+    .icon-tit{
+        margin-top: 70px;
+    }
+    .icon-nav{
+    display: block;
+    }
+    .contenedorBotoneraCategorias {
+        padding: 2px 0;
+    }
+    .icon-nav > .row {
+    margin-top: 0;
     }
 }
 

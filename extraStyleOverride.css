@@ -6,26 +6,24 @@ body
 }
 
 
-/*.contenedorBarraSuperiorInicio
+.contenedorBarraSuperiorInicio
 {
-    background: none;
-}*/
+background: no-repeat url(../resources/commerce/100/res/custom/img/cabezal-md-orange.jpg);
+}
 
-.contenedorBotoneraPantallaInicio
-{
+.contenedorBotoneraPantallaInicio{
     background: #399C6E;  
     top: 148px;
     color: #fff;
     height: 50px;
 }
 
-.botonMenuInicio span
-{
+.botonMenuInicio span{
     color: #fff;
+    height: 47px;
 }
 
-.botonMenuInicio:hover
-{
+.botonMenuInicio:hover{
     background-color: #00c562;
     color:  #fff;
     outline: none;
@@ -34,9 +32,8 @@ body
 .btnSeleccionado
 {
     font-weight: bold;    
-    background-color: transparent;
+    background-color: #00c562;
     color: #fff;
-    padding-bottom: 10px;
 }
 
 .btnSeleccionado:hover
@@ -52,7 +49,7 @@ body
     margin-left: -30%;
     border-radius: 20px;
     bottom: -10px;
-    border: solid 1px red;
+    border: solid 1px #00c562;
     transform: translateY(100%);
     transition: all .5s ease;
 }
@@ -134,10 +131,6 @@ body
     display: none;
 }
 
-.contenedorTituloCategoria
-{
-    color: #0F1623;
-}
 
 .contenedorBotoneraCategorias
 {    
@@ -176,11 +169,13 @@ body
 }
 .contenedorLogoCargando
 {    
-    width: 128px;
-    height: 128px;        
-    background: no-repeat url("../resources/commerce/100/logos/logo128_trans.png");
+    width: 256px;
+    height: 256px;        
+    background: no-repeat url("../resources/commerce/100/res/custom/img/logo_VB.jpg");
     background-position-x: center;
     background-position-y: center;
+    margin-left: -150%;
+    margin-top: -150%;
     opacity: 1;
 }
 /* FIN : CARGANDO */
@@ -192,10 +187,8 @@ body
     font-size: 18px;
 }
 
-.contenedorTituloCategoria
-{
+.contenedorTituloCategoria{
     display: inline-block;
-    max-width: 897px;
     width: 100%; 
     vertical-align: top;
     text-align: left;        
@@ -206,8 +199,9 @@ body
     font-weight: bold;
     font-size: 18px;        
     background-image: none;
-    background: #ED700A;  
+    background: #ffd54f;  
     text-shadow: none;
+    color: #000;
 }
 
 .contenedorProducto
@@ -269,21 +263,11 @@ body
 
 
 .botonCarrito{
-    color: transparent;
-    background-image: url('http://www.surbit.uy/DelysoftApp/resources/commerce/100/res/custom/img/botoncarrito.png');
-    background-repeat: no-repeat;
+    color: #00c562;
 }
 
 /*Categoría Producto*/
 
-#contenedorCategoria1 {
-    background-color:#ffd54f; 
-
-}
-#contenedorCategoria2 {
-    background-color:#ffd78f; 
-
-}
 
 /*Identificado producto*/
 .contenedorIdentificadorProductoEMP{
@@ -396,13 +380,31 @@ body
 }
 
 
+.botonToTop, .botonToBottom {
+    color: #00c562;
+}
 
+.contenedorBotonMenuBarraSuperior{
+    visibility: hidden;
+}
+
+.contenedorHorarioHoy {
+    color: #00c562;
+    background-color: rgba(255,255,255,0.85);
+}
+#contenedorPantallaCargando{
+    background-color: #00a99d;              
+}
 /* CELULARES PEQUEÑOS */
 @media (max-width: 520px)
 {
     #contenedorPantallaCarta{
     background-attachment: initial;
 }
+.contenedorBarraSuperiorInicio{
+background: no-repeat url(../resources/commerce/100/res/custom/img/cabezal-max520-orange.jpg);
+}
+
 
     /* .contenedorFlotanteGeneral
     {
@@ -473,7 +475,7 @@ body
     width: 60%;
     left: 50%;
     margin-left: -30%;
-    background-color: blue;
+    background-color: rgba(255,255,255,0.85);
     }
     .contenedorProducto{
     width: 430px;
